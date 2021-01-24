@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header Part */
+.header-part {
+    background-color: black;
+}
+.header-part ul {
+    text-align: center;
+}
+.header-part ul li {
+    display: inline-block;
+    padding: 35px 20px;
+    position: relative;
+}
+
+.header-part ul li a {
+    color: #e0c4c5;
+    transition: all .4s ease-in-out;
+}
+.header-part ul li a:hover{
+    color: white;
+    transition: all .4s ease-in-out;
+}
+.header-part ul li:hover > a{
+    color: white;
+}
+.header-part ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #222222;
+	width: 260px;
+    border-top: 5px solid #4272d8;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.header-part ul li:hover > ul{
+    transform: scaleY(1);
+    transition: all .4s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+.header-part ul ul li {
+	display: block;
+	padding: 20px;
+	cursor: pointer;
+    border-bottom: 1px solid #363636;
+    transition: all .4s ease-in-out;
+}
+.header-part ul ul li:last-child{
+    border-bottom: 0;
+}
+.header-part ul ul li:hover{
+    background-color: #4272d8;
+    transition: all .4s ease-in-out;
+}
+.header-part ul ul li a{
+    color: white;
+}
+.header-part ul ul ul {
+	top: 0%;
+    left: 260px;
+    transition: all .4s ease-in-out;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+.header-part ul ul li:hover > ul{
+    transition: all .4s ease-in-out;
+    transform: scaleX(1); 
+}
+
+/* Banner Part */
+.banner-part{
+    background: url(2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+.banner-part h1 {
+	background-color: white;
+	width: 22%;
+	margin: auto;
+	font-weight: 400;
+}
+.banner-part h5 {
+	background-color: white;
+	width: 80%;
+	margin: 25px auto;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 5px 0;
+}
+.banner-part button {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 10px 16px;
+	font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.banner-part button:hover{
+    background-color: #4272d8;
+    transition: all .4s ease-in-out;
+}
+
+/* Footer Part Start */
+.footer-part {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+.footer-part a i {
+	color: black;
+	background-color: #59abf7;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 15px;
+	line-height: 30px;
+    margin: 15px 3px 0 3px;
+    transition: all .4s ease-in-out;
+}
+.footer-part a i:hover{
+    background-color: transparent;
+    color: #59abf7;
+    transition: all .4s ease-in-out;
+}
+
+/* The work has done */
